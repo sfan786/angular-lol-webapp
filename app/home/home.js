@@ -58,7 +58,7 @@ angular.module('myApp.home', ['ngRoute'])
 		key = key.keyCode || key.which;
 
 		if(key === 13){
-			
+
 			if($scope.summonerName.length > 0){
 				//make sure the angular digest catches up, give it a little delay.
 				$timeout(function(){
@@ -76,5 +76,7 @@ angular.module('myApp.home', ['ngRoute'])
 				}, 200);
 			} else angular.element("#summonerName").focus();
 		}
-	} 
+	};
+
+    $scope.myname = "Sfan";
 }]);
